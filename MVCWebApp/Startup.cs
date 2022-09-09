@@ -62,14 +62,14 @@ namespace MVCWebApp
                     pattern: "{controller=Home}/{action=Index}/{id?}"
                     );
 
-
-                //Person route
+                //person route
                 endpoints.MapControllerRoute(
-                    name: "Personlist",
-                    pattern: "Personlist",
-                    defaults: new { controller = "Person", action = "Index" });
+                       name: "Personlist",
+                       pattern: "{controller=Person}/{action=Index}"
+                       );
 
-        
+
+
             });
 
         }
